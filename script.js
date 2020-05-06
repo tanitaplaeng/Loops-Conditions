@@ -13,15 +13,29 @@ if (actualTemp < desiredTemp) {
 
 // Conditions Exercise 2
 
-// let name1 = Daisy; 
-// let name2 = Forrest; 
-// let name3 = Wolf;
+let name1 = 'Daisy'; 
+let name2 = 'Forrest'; 
+let name3 = 'Jack';
+
+if (name1.length < name2.length && name2.length > name3.length) {
+    console.log(name2 + ' is the longest name')
+}   else if (name3.length < name1.length && name1.length < name2.length) {
+    console.log(name2 + ' is the longest name') 
+}   else if (name1.length < name2.length || name1.length < name2.length) { 
+    console.log(name2 + ' is the longest name') 
+}   else if (name2.length < name1.length || name2.length > name3.length) {
+    console.log(name2 + ' is the longest name')
+}   else if (name3.length > name2.length || name3.length < name2.length) {
+    console.log(name2 + ' is the longest name')
+} else { 
+    console.log(name2 + ' is the longest name')
+}
 
 // Loops Exercise 1
 // for Loop
 
 for (let i = 1; i < 11; i++) {
-    console.log('Up to 10');
+    console.log(i);
 }
 
 for (let i = 10; i > 0; i--) { 
@@ -61,6 +75,6 @@ do {
 // for of Loop
 
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-for (let number of numbers) {
-    console.log(number);
+for (const number of numbers) {
+    console.log(number); 
 }
